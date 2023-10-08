@@ -1,0 +1,7 @@
+<div *ngIf="facture?.active; else dehe">{{facture?.dateFacture}}
+</div>
+
+<ng-template #dehe>
+ <p>u cant</p>
+</ng-template>
+<a routerLink="/InvoiceManagement">Back</a>

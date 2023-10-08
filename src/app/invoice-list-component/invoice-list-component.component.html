@@ -1,0 +1,9 @@
+<p>invoice-list-component works!</p>
+
+<ul *ngFor="let f of getList(); let i=index">
+  <li> facrture {{i+1}}
+  <a routerLink="/invoice/{{f.idFacture}}/{{f.active}}">Details</a>
+  <a routerLink="/invoice"  [queryParams]="{ id: f.idFacture, active: f.active }">qp Details</a>
+  </li>
+</ul>
+
